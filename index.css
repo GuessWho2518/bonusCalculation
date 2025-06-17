@@ -1,0 +1,168 @@
+:root {
+  --hoff-red: #e2001a;
+  --hoff-dark-red: #c40016;
+  --hoff-white: #ffffff;
+  --hoff-light-gray: #f5f5f5;
+  --hoff-dark-gray: #333333;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--hoff-light-gray);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--hoff-white);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 650px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: var(--hoff-red);
+  color: var(--hoff-white);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+  background-color: #f8f8f8;
+  color: #666;
+}
+
+.tab.active {
+  background-color: var(--hoff-white);
+  color: var(--hoff-red);
+  border-bottom: 3px solid var(--hoff-red);
+}
+
+.tab-content {
+  display: none;
+  padding: 25px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--hoff-dark-gray);
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--hoff-red);
+  outline: none;
+}
+
+button {
+  background-color: var(--hoff-red);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--hoff-dark-red);
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--hoff-dark-gray);
+  border-left: 4px solid var(--hoff-red);
+  display: none;
+}
+
+.error {
+  color: var(--hoff-red);
+  font-size: 13px;
+  margin-top: 5px;
+  display: none;
+}
+
+.breakdown {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.highlight {
+  color: var(--hoff-red);
+  font-weight: bold;
+}
+
+.hoff-logo {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--hoff-white);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
